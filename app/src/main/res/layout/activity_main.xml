@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ptindustry.uberapp.MainActivity">
+
+    <Button
+        android:id="@+id/getStartedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:onClick="checkState"
+        android:text="get started"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/uber"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"/>
+
+    <TextView
+        android:id="@+id/riderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:text="Rider"
+        android:layout_alignBaseline="@+id/switch1"
+        android:layout_alignBottom="@+id/switch1"
+        android:layout_toStartOf="@+id/switch1"/>
+
+    <TextView
+        android:id="@+id/driverTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:text="Driver"
+        android:layout_alignBaseline="@+id/switch1"
+        android:layout_alignBottom="@+id/switch1"
+        android:layout_toEndOf="@+id/switch1"/>
+
+</RelativeLayout>
